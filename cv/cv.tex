@@ -1,0 +1,194 @@
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2012 Jason R. Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[sc]{mathpazo}
+\usepackage{enumitem}
+%\usepackage{enumerate}
+
+% Set your name here
+\def\name{Jing Liu}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body = {6.5in, 9.1in},
+  left = 1.0in,
+  top = 1.0in,
+}
+
+% no page ordering
+\pagenumbering{gobble}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large}
+\subsectionfont{\rmfamily\mdseries\normalsize}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.2em}
+    \setlength{\itemsep}{0.12em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.12em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+\bigskip
+
+\begin{minipage}{0.47\linewidth}
+\hypersetup{urlcolor=black}
+\href{http://www.wisc.edu}{University of Wisconsin -- Madison}\\
+\href{http://www.cs.wisc.edu}{Department of Computer Sciences}\\
+7354, 1210 W. Dayton St., WI, 53706
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\hypersetup{urlcolor=black}
+\begin{tabular}{ll}
+  %Phone: & (XXX) xxx-xxxx\\
+  Email: & \href{mailto:jingliu@cs.wisc.edu}{\tt jingliu@cs.wisc.edu}\\
+  Homepage: & \href{http://pages.cs.wisc.edu/~jingliu}
+  	{\tt http://pages.cs.wisc.edu/$\sim$jingliu}
+\end{tabular}
+\end{minipage}
+
+\section*{\textsc{Research Interests}}
+
+Scale and Performance of File Systems and Resilient Distributed Storage Systems.
+
+%\if 0
+\vspace{0.15cm}
+\noindent
+{\textit{Research Summary:}} 
+    My research builds high-performance and scalable distributed storage systems from the bottom up. 
+    In today`’s datacenter, the presence of performant yet heterogeneous devices (e.g., NVMe, NVM, NVMe-oF, RDMA, etc.) further increases the complexity to scale distributed storage systems and deliver high performance. My work aims to design layered distributed storage systems where each layer will scale independently to each other with optimized performance and parallelism within the layer, starting from local file system up to the geo-distributed setting. 
+    
+%\fi
+
+
+\section*{\textsc{Education}}
+\begin{itemize}
+  \item {\bf Department of Computer Sciences, University of Wisconsin -- Madison}\hfill 2016 --  now\\
+    Ph.D. Student\\
+   % Advisors: { Prof. Andrea Arpaci-Dusseau \& Prof. Remzi Arpaci-Dusseau}
+  \item {\bf Software Institute, Nanjing University}\hfill 2012 -- 2016\\
+    B.E. in Software Engineering ~~~Rank: 1/238 \\
+    Thesis: {\it Depth-aware layered edge for elastic RGB-D object proposal}
+    % (Awarded Excellent in Province)
+\end{itemize}
+
+
+\section*{\textsc{Refereed Conference Publications}}
+
+\begin{enumerate}[fullwidth,itemindent=1.1em,label={[\arabic*]}]
+    \item {\bf Jing Liu}, Anthony Rebello, Yifan Dai, Chenhao Ye, Sudarsun Kannan, Andrea C. Arpaci-Dusseau, and Remzi H. Arpaci-Dusseau. \textit{Scale and Performance in a Filesystem Semi-Microkernel.} In Proceedings of the 28th ACM Symposium on Operating Systems Principles (SOSP '21), Virtual Event, Germany, 2021.    
+    \item Irene Zhang, Amanda Raybuck, Pratyush Patel, Kirk Olynyk, Jacob Nelson, Omar S. Navarro Leija, Ashlie Martinez, {\bf Jing Liu}, Anna Kornfeld Simpson, Sujay Jayakar, Pedro Henrique Penna, Max Demoulin, Piali Choudhury, and Anirudh Badam. \textit{The Demikernel Library OS Architecture for Microsecond, Kernel-Bypass Datacenter Systems.} In Proceedings of the 28th ACM Symposium on Operating Systems Principles (SOSP '21), Virtual Event, Germany, 2021.
+	\item Suli Yang, {\bf Jing Liu}, Andrea C. Arpaci-Dusseau, and Remzi H. Arpaci-Dusseau. \textit{Principled Schedulability Analysis for Distributed Storage Systems using Thread Architecture Models.}
+        In Proceedings of the 13th Symposium on Operating System and Design Implementation (OSDI '18), CA, USA, 2018.
+    \item Ramnatthan Alagappan, Aishwarya Ganesan, {\bf Jing Liu}, Andrea Arpaci-Dusseau, and Remzi Arpaci-Dusseau. \textit{Fault-Tolerance, Fast and Slow: Exploiting Failure Asynchrony in Distributed Systems.}
+        In Proceedings of the 13th Symposium on Operating System and Design Implementation (OSDI '18), CA, USA, 2018.
+    \item {\bf Jing Liu}, Tongwei Ren, Bingkun Bao and Jia Bei. \textit{Depth-aware Layered Edge for Object  Proposal.}
+		In Proceedings of IEEE International Conference on Multimedia and  Expo (ICME '16), Seattle, USA, 2016.
+	\item {\bf Jing Liu}, Tongwei Ren and Jia Bei. \textit{Elastic Edge Boxes for Object Proposal on RGB-D images.} 
+ 		In Proceedings of International Conference on Multimedia Modeling (MMM '16), Miami, USA, 2016.
+
+\end{enumerate}
+
+
+\section*{\textsc{Journal and Workshops}}
+
+\begin{enumerate}[fullwidth,itemindent=1em,label={[\arabic*]}]
+	\item {\bf Jing Liu}, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau, and Sudarsun Kannan. \textit{File Systems as Processes.} In 11th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage '19), Renton, WA, 2019.
+	\item Irene Zhang, {\bf Jing Liu}, Amanda Austin, Michael Lowell Roberts,
+        and Anirudh Badam. \textit{I’m Not Dead Yet! The Role of the Operating System in a Kernel-Bypass Era.} In Workshop on Hot Topics in Operating Systems (HotOS '19), Bertinoro, Italy, 2019.
+    \item {\bf Jing Liu}, Tongwei Ren, Yuantian Wang, Sheng-Hua Zhong, Jia Bei, and Shengchao Chen. \textit{Object proposal on RGB-D images via elastic edge boxes.} in Neurocomputing  (NEUCOM), 236:134-146, May, 2017.
+\end{enumerate}
+
+\section*{\textsc{Honors and Awards}}
+\begin{itemize}
+  \item Travel Grant (OSDI-18), USENIX \hfill 2018
+  \item Student Scholarship (SOSP-17), SIGOPS \hfill 2017
+  \item CS Summer Research Award, UW-Madison \hfill 2017
+  \item Graduate Research Fellowship, UW-Madison \hfill 2016 -- 2017
+  \item Outstanding Graduate, Nanjing University\hfill 2016
+  \item Departmental Best Undergraduate Thesis, University Highest Honor \hfill 2016
+  \item Outstanding National Undergraduate Innovation Project (Role: Lead, Grant: $\sim$3000\$)  \hfill 2016
+  \item National Encouraging Scholarship, Ministry of Education of China \hfill 2014, 2015
+  \item National Scholarship, Ministry of Education of China \hfill 2013
+\end{itemize}
+
+
+\section*{\textsc{Professional Experience}}
+
+\begin{itemize}
+
+\item {\bf Google, Madison}, WI \hfill Summer 2019\\
+{\it Software Engineering Intern} \\Mentor: Dr. Marc De Kruijf
+
+\item {\bf Microsoft Research, Redmood}, WA \hfill Summer 2018\\
+{\it Research Intern} \\Mentor: Dr. Irene Zhang
+
+\item {\bf Computer Sciences Department of UW-Madison}, WI \hfill Spring 2018\\
+{\it Teaching Assistant} \\Class: Advanced Operating System. Instructor: Prof. Andrea Arpaci-Dusseau
+
+\item {\bf State Key Laboratory for Novel Software Technology}, Nanjing, China
+  \hfill Sep. 2014 -- Apr. 2016\\
+{\it Research Assistant} \\Advisor: Prof. Tongwei Ren
+
+\item {\bf Software Institute of Nanjing University}, Nanjing, China\hfill Spring 2015, Spring 2016\\
+{\it Teaching Assistant, and Head Teaching Assistant} 
+ \\Class: Computer Operating System. Instructors: Prof. Bin Luo \& Prof. Jidong Ge
+\end{itemize}
+
+
+\section*{\textsc{Service}}
+\begin{itemize}
+	\item FAST External Reviewer \hfill 2018
+\end{itemize}
+
+\section*{\textsc{Presentations and Invited Talks}}
+\begin{itemize}
+       \item {\bf{Scale and Performance in a Filesystem Semi-Microkernel.}} \\
+        {\small{Invited talk at {{Samsung MSL Tech Talk}}, virtual.}} \hfill June 2021
+       \item {\bf{File Systems as Processes.}} \\
+        {\small{Talk at HotStorage '19, Renton, WA.}} \hfill July 2019
+       \item {\bf{Elastic Edge Boxes for Object Proposal on RGB-D Images.}} \\
+     {\small{Talk at MMM '16, Miami, MI.}}  \hfill Jan. 2016
+\end{itemize}
+
+%\medskip
+%\begin{center}
+%  \begin{small}
+%  Last updated: \today
+%  \end{small}
+%\end{center}
+\end{document}
